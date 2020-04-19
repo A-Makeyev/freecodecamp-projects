@@ -1,3 +1,1 @@
-# freeCodeCamp Projects
-
-Projects that were made by learning with freeCodeCamp ❤
+## [Projects](https://freecodecamp-projects.netlify.app/) that were made in the freeCodeCamp [curriculum](https://www.freecodecamp.org/learn) ❤
