@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Pizza Survey Form</title>
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <link rel="shortcut icon" type="image/png" href="images/pizza.jpg">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+</head>
+     <body>
+          <h1 id="title">Pizza Survey Form</h1>
+          <div id="form-container">
+               <p id="description">Please let us know how can we improve our pizza!</p><hr>
+
+               <form id="survey-form" method="GET">
+                    <div class="row">
+                         <div class="labels"><label id="name-label" for="name"><strong>*</strong> Name</label></div>
+                         
+                         <div class="input-tab">
+                              <input autofocus type="text" name="name" id="name" class="input-field" placeholder="What's your name?" required>
+                         </div> 
+                    </div> <!-- end of name row -->  
+                    
+                    <div class="row">
+                         <div class="labels"><label id="email-label" for="email"><strong>*</strong> Email</label></div>
+                         
+                         <div class="input-tab">
+                              <input autofocus type="email" name="email" id="email" class="input-field" placeholder="What's your email address?" required>
+                         </div>
+                    </div> <!-- end of email row -->
+
+                    <div class="row">
+                         <div class="labels"><label id="age-label" for="age"><strong>*</strong> Age</label></div>
+                         
+                         <div class="input-tab">
+                              <input autofocus type="number" name="age" id="age" min="1" max="199" class="input-field" placeholder="How old are you?" required>
+                         </div>
+                    </div> <!-- end of age row -->
+
+                    <div class="row">
+                         <div class="labels"><label for="gender">How would you identify yourself?</label></div>
+
+                         <div class="input-tab">
+                              <select id="dropdown" class="dropdown" name="gender">
+                                   <option disabled selected value>Select an option</option>
+                                   <option value="male">Male</option>
+                                   <option value="female">Female</option>
+                                   <option value="trans-man">Trans Man</option>
+                                   <option value="trans-woman">Trans Woman</option>
+                                   <option value="none-gender">None Gender</option>
+                                   <option valute="turtle">Ninja Turtle</option>
+                                   <option value="other">Other</option>
+                              </select>
+                         </div>
+                    </div> <!-- end of gender row -->
+
+                    <div class="row">
+                         <div class="labels"><label for="rating">Would you recommend us to a friend?</label></div>
+
+                         <div class="input-tab">
+                              <ul style="list-style: none;">
+                                   <li class="radio"><label>Definitely<input type="radio" name="radio-btn" value="1" class="rating"></label></li>
+                                   <li class="radio"><label>I Might<input type="radio" name="radio-btn" value="2" class="rating"></label></li>
+                                   <li class="radio"><label>Probably Not<input type="radio" name="radio-btn" value="3" class="rating"></label></li>
+                              </ul>
+                         </div>
+                    </div> <!-- end of rating row --> 
+
+                    <div class="row">
+                         <div class="labels"><label for="like">What do you like about our pizza?</label></div>
+
+                         <div class="input-tab">
+                              <select class="dropdown" id="like" name="like">
+                                   <option disabled selected valule>Select an option</option>
+                                   <option value="cheese">The cheese is legit cheesy</option>
+                                   <option value="crust">The crust is really crusty</option>
+                                   <option valute="good">It's actually really good</option>
+                                   <option value="rats">The lack of rats</option>
+                              </select>
+                         </div>
+                    </div> <!-- end of like row -->
+
+                    <div class="row">
+                         <div class="labels"><label for="preferences">What would you like us to improve?</label></div>
+
+                         <div class="input-tab">
+                              <ul id="preferences" style="list-style: none;">
+                                   <li class="checkbox"><label><input type="checkbox" name="prefer" class="rating" value="1">Hire hot cashiers</label></li>
+                                   <li class="checkbox"><label><input type="checkbox" name="prefer" class="rating" value="2">Use dairy-free cheese</label></li>
+                                   <li class="checkbox"><label><input type="checkbox" name="prefer" class="rating" value="3">Use more tomato sauce</label></li>
+                                   <li class="checkbox"><label><input type="checkbox" name="prefer" class="rating" value="4">Add a gummy bear toppings</label></li>
+                                   <li class="checkbox"><label><input type="checkbox" name="prefer" class="rating" value="5">Remove the pineapple toppings</label></li>
+                              </ul>
+                         </div>
+                    </div> <!-- end of preferences row -->
+
+                    <div class="row">
+                         <div class="labels"><label for="suggestions">Anything you would like to suggest?</label></div>
+
+                         <div class="input-tab">
+                              <textarea id="suggestions" class="input-field" name="suggestions" style="height:50px;resize:vertical;" placeholder="Your suggestions.."></textarea>
+                         </div>
+                    </div> <!-- end of suggestions -->
+
+                    <button type="submit" id="submit">Submit</button>
+
+               </form>
+          </div> <!-- end of form-container -->
+     </body>
+</html>

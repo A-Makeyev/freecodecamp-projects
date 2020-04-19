@@ -1,0 +1,333 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     background-color: #EEEEEE;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#wrapper {
+     position: relative;
+}
+
+li {
+     list-style: none;
+}
+
+a {
+     color: rgb(60, 60, 60);
+     text-decoration: none;
+}
+
+a:hover {
+  color: orange;
+  transition: color 1s;
+}
+
+.container {
+     margin: 0 auto;
+     width: 100%;
+     max-width: 1000px;
+}
+
+.btn {
+     padding: 0 20px;
+     height: 40px;
+     font-size: 1em;
+     font-weight: 900;
+     border: 3px solid rgb(60, 60, 60);
+     border-radius: 4px;
+     background: transparent;
+     cursor: pointer;
+}
+
+.grid {
+     display: flex;
+}
+
+/* ~~~~~~~~~~~~~ nav bar ~~~~~~~~~~~~~ */
+
+nav {
+     font-weight: 400;
+}
+
+header {
+     top: 0;
+     position: fixed;
+     display: flex;
+     min-height: 75px;
+     padding: 0 20px;
+     align-items: center;
+     justify-content: space-around;
+     background-color: #EEEEEE;
+     width: 100%;
+}
+
+#logo {
+     width: 60vw;
+}
+
+#logo-img {
+     width: 100%;
+     height: 100%;
+     max-width: 300px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     margin-left: 20px;
+}
+
+#nav-bar-ul {
+     width: 35vw;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+}
+
+/* ~~~~~~~~~~~~~ get-started ~~~~~~~~~~~~~ */
+
+#get-started {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     height: 200px;
+     margin-top: 50px;
+}
+
+#get-started h2 {
+     margin-bottom: 20px;
+     word-wrap: break-word;
+}
+
+input[type="email"] {
+     width: 100%;
+     max-width: 575px;
+     padding: 10px;
+     border-radius: 1px;
+}
+
+input[type="submit"] {
+     width: 100%;
+     max-width: 150px;
+     height: 30px;
+     margin: 15px 0;
+     border: 0;
+     padding: 1px 0 0 0;
+     background-color: #F1C40F;
+}
+
+#submit:hover {
+     background-color: orange;
+     transition: background-color 1s;
+}
+
+/* ~~~~~~~~~~~~~ features ~~~~~~~~~~~~~ */
+
+#features {
+     margin-top: 30px;
+}
+
+.icon {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 25vw;
+     height: 125px;
+}
+
+.desc {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     width: 80vw;
+     height: 125px;
+     padding: 5px;
+}
+
+/* ~~~~~~~~~~~~~ how-it-works ~~~~~~~~~~~~~ */
+
+#how-it-works {
+     display: flex;
+     margin-top: 50px;
+     justify-content: center;
+}
+
+iframe {
+     width: 100%;
+     max-width: 900px;
+     height: 510px;
+     margin-left: 6%;
+}
+
+/* ~~~~~~~~~~~~~ pricing ~~~~~~~~~~~~~ */
+
+#pricing {
+     display: flex;
+     margin-top: 60px;
+     justify-content: center;
+     flex-direction: row;
+     margin-left: 6%;
+}
+
+#tenor, #bass, #valve {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+     margin: 10px;
+     border: 1px solid rgb(60, 60, 60);
+     border-radius: 4px;
+     width: calc(100% / 3);
+     
+}
+
+.level {
+     width: 100%;
+     background-color: #DDDDDD;
+     color: rgb(60, 60, 60);
+     padding: 15px 0;
+     font-weight: 700;
+     text-transform: uppercase;
+}
+
+#pricing h2 {
+     margin-top: 15px;
+}
+
+#pricing ol {
+     margin: 15px 0;
+}
+
+#pricing li {
+     padding: 5px 0;
+}
+
+#pricing button {
+     margin: 15px 0;
+     border: 0;
+     font-weight: 400;
+     background-color: #F1C40F;
+}
+
+#pricing button:hover {
+     background-color: orange;
+     transition: background-color 1s;   
+}
+
+/* ~~~~~~~~~~~~~ footer ~~~~~~~~~~~~~ */
+
+footer {
+     padding: 20px;
+     margin-left: 60px;
+     margin-top: 30px;
+     background-color: #DDDDDD;
+}
+
+footer ul {
+     display: flex;
+     justify-content: flex-end;
+}
+
+footer li {
+     padding: 0 10px;
+     margin-right: 15%;
+}
+
+footer span {
+     display: flex;
+     justify-content: flex-end;
+     margin-top: 30px;
+     margin-right: 35%;
+     font-size: 1em;
+     color: rgb(60, 60, 60);
+}
+
+/* ~~~~~~~~~~~~~~~~~~ Responsive ~~~~~~~~~~~~~~~~~~ */
+
+@media only screen and (max-width: 550px) {
+     .icon {
+          display: none;
+     }
+
+     .desc {
+          width: 100%;
+          text-align: center;
+          height: 150px;
+          padding: 0;
+     }
+
+     footer {
+          margin: 0 auto;
+     }
+
+     footer ul {
+          margin-left: 200px;
+     }
+
+     footer span {
+          margin-left: 200px;
+     }
+}
+
+@media only screen and (max-width: 600px) {
+     header {
+          flex-wrap: wrap;
+     }
+}
+
+@media only screen and (max-width: 650px) {
+     #logo {
+          position: relative;
+          width: 100%;
+          margin-top: 15px;
+     }
+
+     #logo-img {
+          margin: 0 auto;
+     }
+
+     nav {
+          width: 100%;
+          margin-top: 10px;
+          padding: 0 50px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+     }
+
+     nav li {
+          padding-bottom: 5px;
+     }
+
+     nav ul {
+          flex-direction: column;
+     }
+
+     #get-started {
+          margin-top: 120px;
+     }
+
+     #features {
+          margin-top: 0;
+     }
+}
+
+@media only screen and (max-width: 800px) {
+     #pricing {
+          flex-direction: column;
+     }
+
+     #tenor, #bass, #valve {
+          width: 100%;
+          max-width: 300px;
+          margin: 0 auto;
+          margin-bottom: 10px;
+     }
+}

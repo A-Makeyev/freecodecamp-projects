@@ -1,0 +1,111 @@
+html, body {
+     background-color: #68D4E7;
+     text-align: center;
+     font-family: 'Courier New', Courier, monospace;
+     min-width: 360px;
+}
+
+#description {
+     font-size: 1.2em;
+     color: rgb(22, 22, 22);
+}
+
+#form-container {
+     background-color: rgb(236, 236, 236);
+     margin: 0 auto;
+     border-radius: 5px;
+     width: 75%;
+     max-width: 900px;
+     padding: 10px;
+     padding-top: 20px;
+}
+
+.labels {
+     display: inline-block;
+     text-align: right;
+     width: 40%;
+     padding: 5px;
+     margin-top: 10px;
+     vertical-align: top;
+}
+
+.input-tab {
+     display: inline-block;
+     text-align: left;
+     width: 45%;
+     vertical-align: middle;
+}
+
+.input-field {
+     height: 20px;
+     width: 280px;
+     padding: 5px;
+     margin: 10px;
+     border-radius: 2px;
+     border: 1px solid rgb(22, 22, 22);
+}
+
+.rating, input[type="checkbox"] {
+     float: left;
+     margin-right: 5px;
+}
+
+.dropdown {
+     height: 35px;
+     width: 140px;
+     padding: 5px;
+     margin: 10px;
+     margin-top: 15px;
+     border-radius: 2px;
+     border: 1px solid rgb(22, 22, 22);
+}
+
+.radio, .checkbox {
+     position: relative;
+     left: -43px;
+     margin-left: 10px;
+     display: block;
+     padding-bottom: 10px;
+}
+
+#submit {
+     background-color: #68D4E7;
+     color: white;
+     border-radius: 5px;
+     font-size: 1em;
+     height: 40px;
+     width: 96px;
+     margin: 10px;
+     border: 1px solid;
+}
+
+#submit:hover {
+     background-color: rgb(48, 224, 72);
+}
+
+strong {
+     color: red;
+}
+
+@media screen and (max-width: 833px) {
+     .input-field {
+          width: 80%;
+     }
+}
+
+@media screen and (max-width: 520px) {
+     .labels {
+          text-align: left;
+          width: 100%;
+     }
+     .input-tab {
+          float: left;
+          width: 80%;
+     }
+     .input-field {
+          width: 100%;
+     }
+     select {
+          width: 100%;
+     }
+}
