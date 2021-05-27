@@ -13,7 +13,7 @@
           <div id="form-container">
                <p id="description">Please let us know how can we improve our pizza!</p><hr>
 
-               <form id="survey-form" method="GET" onsubmit="submit()">
+               <form id="survey-form" method="GET" onsubmit="myFunction()">
                     <div class="row">
                          <div class="labels"><label id="name-label" for="name"><strong>*</strong> Name</label></div>
                          
@@ -105,8 +105,8 @@
                </form>
           </div> <!-- end of form-container -->
           <script>
-               function submit() {
-                    alert('Form Submitted Successfully')    
+               function myFunction() {
+                 alert("The form was submitted");
                }
           </script>
      </body>
