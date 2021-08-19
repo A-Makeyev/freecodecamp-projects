@@ -163,11 +163,11 @@
                   // THIS WILL CAUSE AN ERROR
                   function f() {};
                   const f = 5;
+                  
                   // THIS WILL CAUSE AN ERROR ALSO
                   function f() {
                     const g = 5;
                     var g;
-                    //statements
                   }
             </code>
 
@@ -203,9 +203,9 @@
              
              <code>
                if (condition) {
-               statement_1;
+                    statement_1;
                } else {
-               statement_2;
+                    statement_2;
                }
             </code>
 
@@ -215,13 +215,13 @@
                    
              <code>
                if (condition_1) {
-               statement_1;
+                    statement_1;
                } else if (condition_2) {
-               statement_2;
+                    statement_2;
                } else if (condition_n) {
-               statement_n;
+                    statement_n;
                } else {
-               statement_last;
+                    statement_last;
                } 
             </code>
 
@@ -229,11 +229,11 @@
              
              <code>
                if (condition) {
-               statement_1_runs_if_condition_is_true;
-               statement_2_runs_if_condition_is_true;
+                    statement_1_runs_if_condition_is_true;
+                    statement_2_runs_if_condition_is_true;
                } else {
-               statement_3_runs_if_condition_is_false;
-               statement_4_runs_if_condition_is_false;
+                    statement_3_runs_if_condition_is_false;
+                    statement_4_runs_if_condition_is_false;
                }
             </code>
 
@@ -241,7 +241,7 @@
 
              <code>
                   if (x = y) {
-               /* statements here */
+                    /* statements here */
                   }
             </code>
 
@@ -249,7 +249,7 @@
              
              <code>
                   if ((x = y)) {
-               /* statements here */
+                    /* statements here */
                   }
             </code>
                  </article>
@@ -274,8 +274,9 @@
           <code>
                var n = 0;
                var x = 0;
+               
                while (n < 3) {
-               n++;
+                    n++;
                x += n;
              }
           </code>
@@ -299,7 +300,7 @@
              
              <code>
                   function square(number) {
-                  return number * number;
+                    return number * number;
                   }
             </code>
 
