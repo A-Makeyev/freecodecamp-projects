@@ -98,13 +98,13 @@
                  <article>
              You can declare a variable in three ways:
                    <p>
-                   With the keyword var. For example, <code>var x = 42.</code> This syntax can be used to declare both local and global variables.
+                   With the keyword var. For example, <code>var name = "Estabon"</code> This syntax can be used to declare both local and global variables.
                    </p>
                    <p>
-                     By simply assigning it a value. For example, <code>x = 42.</code> This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.
+                     By simply assigning it a value. For example, <code>name = "Estabon"</code> This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.
                    </p>
                    <p>
-                     With the keyword let. For example,<code> let y = 13.</code> This syntax can be used to declare a block scope local variable. See Variable scope below.
+                     With the keyword let. For example,<code> let y = 8</code> This syntax can be used to declare a block scope local variable. See Variable scope below.
                    </p>
 
                  </article>
@@ -184,15 +184,16 @@
                  <header>Data types</header>
                  <article>
                    <p>The latest ECMAScript standard defines seven data types:</p>
-                   <li><p>Six data types that are primitives:</p>
+                   <p>Six data types that are primitives:</p>
              <ul>
                <li>Boolean. true and false.</li>
              <li>null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the same as Null, NULL, or any other variant.</li>
                <li>undefined. A top-level property whose value is undefined.</li>
              <li>Number. 42 or 3.14159.</li>
                <li>String. "Howdy"</li>
-                     <li>Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.</li></ul>
-                   <li>and Object</li>
+               <li>Object. { product: "Galaxy 20 Phone", inStock: true }</li>
+                <li>Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.</li></ul>
+                   
              Although these data types are a relatively small amount, they enable you to perform useful functions with your applications. Objects and functions are the other fundamental elements in the language. You can think of objects as named containers for values, and functions as procedures that your application can perform.
                  </article>
                  </section>
@@ -276,9 +277,9 @@
                var x = 0;
                
                while (n < 3) {
-                    n++;
-               x += n;
-             }
+                  n++;
+                  x += n;
+               }
           </code>
              <p>With each iteration, the loop increments n and adds that value to x. Therefore, x and n take on the following values:</p>
              
